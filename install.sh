@@ -3,6 +3,8 @@
 #Instagram: @thelinuxchoice
 trap 'echo exiting cleanly...; exit 1;' SIGINT SIGTSTP
 
+cd instashell/ chmod 775 instashell.sh chmod 775 install.sh
+
 checkroot() {
 
 if [[ "$(id -u)" -ne 0 ]]; then
